@@ -1,0 +1,26 @@
+{
+	"strings": {
+		"openApp": "打开应用",
+		"time": "昨天",
+		"title": "笔记",
+		"secondaryInfo": "准备配送",
+		"middleTitle": "2021计划",
+		"smallTitle": "2020年还剩最后半个月，又到了该盘点年度爆笑新闻的时候。",
+		"bottomMiddleTitle": "绿皮书",
+		"bottomSmallTitle": "教育意味着获得不同的视角，理解不同的人，经历和...",
+		"name": "",
+		"description": "",
+		"groupTitle": "",
+		"shortcutTitle": "",
+		"symmetry_name": "我是服务名称",
+		"symmetry_additional": "开始登机 登机口41",
+		"symmetry_content": "开始登机",
+		"symmetry_departureLocation": "宝安机场",
+		"symmetry_destLocation": "虹桥机场",
+		"symmetry_number": "深航 CA1837·",
+		"symmetry_checkIn": "值机柜台K19",
+		"symmetryBtnText": "登机牌",
+		"symmetry_voiceLabel": "我是语音播报",
+		"symmetry_serviceName": "航旅纵横"
+	}
+}

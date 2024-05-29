@@ -1,0 +1,21 @@
+{
+	"card": {
+		"support": "2*4|2*2|1*2|notification_sm|notification_md|notification_lg"
+	},
+	"click": [
+		{
+			"type": "activity",
+			"packageName": "",
+			"action": "",
+			"category": "",
+			"params": {
+				"key": "value"
+			}
+		}
+	],
+	"host": {
+		"packageName": "",
+		"componentName": "",
+		"minHostVersion": 1
+	}
+}

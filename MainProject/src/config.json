@@ -1,0 +1,37 @@
+{ 
+    "identifier": {
+        "url": "",
+        "id": "",
+        "type": "seedling",
+        "name": "MainProject",
+        "version": "1.0.1",
+        "versionCode": 1000001
+    },
+    "intent": {
+        "action": [],
+        "domain": "tools"
+    },
+    "runtime": {
+        "type": "interactive",
+        "permission": [],
+        "use-software": {
+            "platform-version": 2000000
+        },
+        "support-hardware": {
+            "device": [{
+                "type": "PHONE",
+                "entry": ["desktop","assistantscreen","aod","statusbar","notification","lockscreen","headset","secondarylockscreen","secondarynotification"]
+            }]
+        },
+        "interactive": {
+            "pages": ["pages/index"],
+            "window": {
+                "design-width": 328,
+                "auto-design-width": false
+            }
+        }
+    },
+    "meta-data": {
+        "card-config": "assets/card-config.json"
+    }
+}

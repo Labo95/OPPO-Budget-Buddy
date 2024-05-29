@@ -1,0 +1,187 @@
+<template>
+    <card-template entry="notification" category="symmetry">
+        <image level="0:A*" src="{{ symmetry_logo }}"></image>
+        <text level="1:B*">{{ symmetry_additional }}</text>
+        <div level="5:F" bg-image="{{ symmetry_bg }}">
+          <div level="6-1:G1" bg-image="{{ symmetry_bg }}">
+            <image level="0-1:A1*" src="{{ symmetry_logo }}"></image>
+            <text level="2-1:C1">{{ $t('strings.symmetry_name') }}</text>
+          </div>
+          <text level="1-1:B1*">{{ symmetry_content }}</text>
+          <text level="2-2:C2*">{{ symmetry_number }}</text>
+          <text level="2-3:C3">{{ symmetry_checkIn }}</text>
+          <div level="6:G">
+            <text level="2-4:C4">{{ symmetry_departureLocation }}</text>
+            <text level="2-5:C5">{{ symmetry_destLocation }}</text>
+            <text level="3-1:D1">{{ symmetry_departureTime }}</text>
+            <text level="3-2:D2">{{ symmetry_destTime }}</text>
+            <image level="3-3:D3" src="{{ symmetry_airplane }}"></image>
+            <text level="3-4:D4">{{ symmetry_extraDays }}</text>
+          </div>
+          <button level="4:E" @click="clickButton" type="capsule" value="{{ symmetryBtnText }}"></button>
+        </div>
+    </card-template>
+    <card-template entry="gadget" onclick="clickCard">
+    		<widget type="progress" min="{{ min }}" max="{{ max }}" value="{{ currentValue }}">
+        		<text class="middle">{{ currentValue }}</text>
+        		<image class="bottom" src="{{ url }}"></image>
+    		</widget>
+		</card-template>
+    <card-template entry="desktop">
+        <div class="container">
+            <div class="top">
+                <text class="text left">{{$t('strings.title')}}</text>
+                <image src="{{ $r('images.image') }}" class="image"></image>
+            </div>
+            <div class="content">
+                <text class="text middleTitle">{{$t('strings.middleTitle')}}</text>
+                <text class="text smallTitle">{{$t('strings.smallTitle')}}</text>
+                <text class="text time">{{$t('strings.time')}}</text>
+            </div>
+            <div class="bottom">
+                <text class="text bottomMiddleTitle">{{$t('strings.bottomMiddleTitle')}}</text>
+                <text class="text bottomSmallTitle">{{$t('strings.bottomSmallTitle')}}</text>
+            </div>
+        </div>
+    </card-template>
+</template>
+    
+<style>
+    .container {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+    .time {
+        display: none;
+    }
+    .text {
+        font-style: normal;
+        font-weight: 400;
+        font-family: "sys-sans-en";
+        font-weight: 400;
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.55);
+        text-overflow: ellipsis;
+    }
+    .top {
+        width: 100%;
+        height: 36px;
+        padding: 0 20px 0 16px;
+        background-color:  #F7C126;
+        justify-content: space-between;
+    }
+    .left {
+        color: #FFFFFF;
+        margin: 14px 0 8px 0px;
+    }
+    .image {
+        width: 36px;
+        height: 32px;
+        margin-top: 4px;
+        object-fit: contain;
+    }
+   
+    .middleTitle{
+        font-weight: 500;
+        font-family: "sys-sans-en";
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.85);
+        margin-bottom: 3.08px;
+    }
+    .bottom {
+        margin: 0px 16.4px 20.52px 16.4px;
+        flex-direction: column;
+    }
+    .bottomMiddleTitle{
+        font-weight: 500;
+        font-family: "sys-sans-en";
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.85);
+        margin-bottom: 3.08px;
+    }
+
+    @media (aspect-ratio: 1*2) {
+        .content {
+            margin: 11px 0 0 16px;
+        }
+        .smallTitle {
+            display: none;
+        }
+       
+        .bottom {
+            display: none;
+        }
+    }
+
+    @media (aspect-ratio: 2*2) {
+        .content {
+            margin: 8.12px 16.83px 0 16.83px;
+            flex-direction: column;
+        }
+        .smallTitle {
+            max-lines:3
+        }
+        .bottom {
+            display: none;
+        }
+        .time {
+            display: flex;
+            font-size: 10px;
+            position: fixed;
+            left: 16px;
+            bottom: 10px;
+        }
+    }
+    @media (aspect-ratio: 2*4) { 
+        .content {
+            margin: 13.25px 16.4px 10.26px 16.4px;
+            flex-direction: column;
+        }
+
+    }
+   
+
+</style> 
+
+<data>
+    {
+        "uiData": {
+            "symmetry_logo": "assets/images/symmetry_logo.png",
+        "symmetry_additional": "开始登机 登机口41",
+        "symmetry_content": "开始登机",
+        "symmetry_airplane": "assets/images/symmetry_plane.png",
+        "symmetry_departureTime": "23:00",
+        "symmetry_destTime": "01:24",
+        "symmetry_extraDays": "+1",
+        "symmetry_bg": "assets/images/symmetry_bg.png",
+        "symmetry_departureLocation": "宝安机场",
+        "symmetry_destLocation": "虹桥机场",
+        "symmetry_number": "深航 CA1837·",
+        "symmetry_checkIn": "值机柜台K19",
+        "symmetryBtnText": "登机牌",
+        "symmetry_name": "我是服务名称",
+        "symmetry_serviceName": "航旅纵横",
+            "currentValue": "6894",
+		    "min": "0",
+		    "max": "20000",
+		    "url": "assets/images/walk.png",
+            "time": "昨天",
+            "title": "笔记",
+            "secondaryInfo": "准备配送",
+            "middleTitle": "2021计划",
+            "smallTitle": "2020年还剩最后半个月，又到了该盘点年度爆笑新闻的时候。",
+            "bottomMiddleTitle": "绿皮书",
+            "bottomSmallTitle": "教育意味着获得不同的视角，理解不同的人，经历和..."
+        },
+
+        "uiEvent": {
+            "btnOnClick": {
+                "type": "deeplink",
+                "uri": "nativeapp://com.xxx",
+                "params": {}
+            }
+        }
+    }
+</data>
+    

@@ -1,0 +1,28 @@
+{
+	"strings": {
+		"strings": {
+			"openApp": "open app",
+			"time": "Yesterday",
+			"title": "Notes",
+			"secondaryInfo": "To be delivered",
+			"middleTitle": "Plan for 2021",
+			"smallTitle": "Only half a month is left. It's time to summarize the most hilarious news of the year.",
+			"bottomMiddleTitle": "Green Book",
+			"bottomSmallTitle": "Education means gaining different perspectives and understanding different people,experiences, and…",
+			"name": "",
+			"description": "",
+			"groupTitle": "",
+			"shortcutTitle": ""
+		},
+		"symmetry_name": "ServiceName",
+		"symmetry_additional": "Now boarding at gate 41",
+		"symmetry_content": "Boarding",
+		"symmetry_departureLocation": "Shenzhen Bao'an International Airport",
+		"symmetry_destLocation": "Shanghai Hongqiao Airport",
+		"symmetry_number": "Shenzhen Airlines CA1837·",
+		"symmetry_checkIn": "Check-in counter K19",
+		"symmetryBtnText": "Boarding pass",
+		"symmetry_voiceLabel": "Hello",
+		"symmetry_serviceName": "Umetrip"
+	}
+}
